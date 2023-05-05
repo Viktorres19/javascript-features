@@ -1,29 +1,6 @@
-document.querySelector('#elastic').oninput = function() {
-    let val = this.value.trim()
-    let elasticItems = document.querySelectorAll('.elastic li')
-    if (val != '') {
-        elasticItems.forEach(function(elem) {
-            if (elem.innerText.search(val) == -1) {
-                elem.classList.add('hide')
-                elem.innerHTML = elem.innerText
-            }
-            else {
-                elem.classList.remove('hide')
-                let str = elem.innerText
-                elem.innerHTML =  insertMark(str, elem.innerText.search(val), val.length)
-            }
-        })
-    }
-    else {
-        elasticItems.forEach(function(elem) {
-            elem.classList.remove('hide')
-            elem.innerHTML = elem.innerText
-        })
-    }
-}
+const values = [2, 14, 20, 50]
 
-function insertMark(string,pos,len) {
-    //hello world
-    // hello<mark> wo</mark>
-    return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len)
-}
+const newValues = values.map((value, index) => {
+    let newValue = value + 2
+    console.log('new value: ' + newValue + ' ,index number: ' + (index + 1))
+})
