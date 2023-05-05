@@ -1,0 +1,19 @@
+.elastic {
+    list-style: none;
+    padding: 0;
+}
+.elastic li {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.elastic li.hide {
+    display: none;
+}
+
+mark {
+    background: pink;
+}
