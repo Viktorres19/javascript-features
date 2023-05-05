@@ -9,3 +9,5 @@ Here is an example of the paragraph
 yarn install
 ```
 ## 02 Second Lesson Map Method
+
+## 03 DOM
